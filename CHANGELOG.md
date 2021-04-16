@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.6.0 (2021-04-16)
+
+
+### Features
+
+* created the base config ([f8cd88c](https://github.com/my-poc-sandbox/eslint-config-poc/commit/f8cd88c129a2ba50b039da2c9f554a9793bb0f5e))
+
 ### 1.5.1 (2021-04-16)
 
 
