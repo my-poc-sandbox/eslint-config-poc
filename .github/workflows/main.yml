@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  prepare:
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Check out source code
@@ -36,13 +36,8 @@ jobs:
         run: |
           git config --global user.email "github-actions[bot]"
           git config --global user.name "github-actions[bot]@users.noreply.github.com"
-      - name: Bump Version
+      - name: Bump and Publish
         run: |
           yarn package:release
           git push --follow-tags origin master
-  release:
-    needs: prepare
-    runs-on: ubuntu-latest
-    steps:
-    - name: Publish Package
-      run: yarn package:publish
+          yarn package:publish
