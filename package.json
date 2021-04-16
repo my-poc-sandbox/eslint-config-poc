@@ -14,7 +14,7 @@
     "package:copy": "mkdir lib && cp config/* lib && cp package.json lib",
     "package:build": "yarn package:clean && yarn package:copy",
     "package:release": "standard-version",
-    "prepublish": "yarn build"
+    "prepublish": "yarn package:build"
   },
   "husky": {
     "hooks": {
