@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.5.1 (2021-04-16)
+
+
+### Bug Fixes
+
+* fixed the push ([08b7219](https://github.com/my-poc-sandbox/eslint-config-poc/commit/08b7219a8fe19e55d740780ea82d23bb2e7d6717))
+
 ## [1.5.0](https://github.com/my-poc-sandbox/eslint-config-poc/compare/v1.4.0...v1.5.0) (2021-04-16)
 
 
