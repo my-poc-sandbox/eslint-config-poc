@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.6.1 (2021-04-16)
+
+
+### Bug Fixes
+
+* fixed the workflow ([13c0abc](https://github.com/my-poc-sandbox/eslint-config-poc/commit/13c0abc4f95ccbc48c75f0df9d5f4ee09e474614))
+
 ## 1.6.0 (2021-04-16)
 
 
