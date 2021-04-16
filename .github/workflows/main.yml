@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  release:
+  prepare:
     runs-on: ubuntu-latest
     steps:
       - name: Check out source code
@@ -40,5 +40,9 @@ jobs:
         run: |
           yarn package:release
           git push --follow-tags origin master
-      - name: Publish Package
-        run: yarn package:publish
+  release:
+    needs: prepare
+    runs-on: ubuntu-latest
+    steps:
+    - name: Publish Package
+      run: yarn package:publish
