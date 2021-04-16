@@ -1,0 +1,43 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source code
+        uses: actions/checkout@v2
+      - name: Set up node
+        uses: actions/setup-node@v1
+      - name: Use cache 
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+      - name: Install dependencies
+        run: yarn
+      - name: Create NPMRC
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+      - name: Bump Version
+        run: yarn package:release
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          tags: true
+      - name: Publish Package
+        run: yarn package:publish
