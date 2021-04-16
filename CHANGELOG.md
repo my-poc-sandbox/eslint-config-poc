@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/my-poc-sandbox/eslint-config-poc/compare/v1.4.0...v1.5.0) (2021-04-16)
+
+
+### Features
+
+* added the publish ([5027f12](https://github.com/my-poc-sandbox/eslint-config-poc/commit/5027f12b2d9013ea718b64f480d09ee300cb1f3c))
+
 ## [1.4.0](https://github.com/my-poc-sandbox/eslint-config-poc/compare/v1.3.0...v1.4.0) (2021-04-16)
 
 
