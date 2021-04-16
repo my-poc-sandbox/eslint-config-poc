@@ -2,6 +2,7 @@
   "name": "@my-poc-sandbox/eslint-config",
   "version": "1.1.0",
   "license": "MIT",
+  "pkgRoot": "lib",
   "repository": {
     "type": "git",
     "url": "git://github.com/my-poc-sandbox/eslint-config-poc.git"
@@ -9,7 +10,11 @@
   "scripts": {
     "format:check": "prettier --check **/*.{js,jsx,json,ts,tsx}",
     "format:fix": "prettier --write **/*.{js,jsx,json,ts,tsx}",
-    "package:release": "standard-version"
+    "package:clean": "rm -rf lib",
+    "package:copy": "mkdir lib && cp config/* lib && cp package.json lib",
+    "package:build": "yarn package:clean && yarn package:copy",
+    "package:release": "standard-version",
+    "prepublish": "yarn build"
   },
   "husky": {
     "hooks": {
