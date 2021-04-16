@@ -1,0 +1,41 @@
+{
+  "name": "@my-poc-sandbox/eslint-config",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/my-poc-sandbox/eslint-config-poc.git"
+  },
+  "scripts": {
+    "format:check": "prettier --check **/*.{js,jsx,json,ts,tsx}",
+    "format:fix": "prettier --write **/*.{js,jsx,json,ts,tsx}",
+    "release": "standard-version"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,json,ts,tsx}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.5",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1"
+  },
+  "devDependencies": {
+    "husky": "4.3.8",
+    "lint-staged": "^10.5.4",
+    "standard-version": "^9.2.0"
+  }
+}
