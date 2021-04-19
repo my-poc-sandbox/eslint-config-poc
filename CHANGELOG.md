@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.8.1 (2021-04-19)
+
+
+### Bug Fixes
+
+* fixed the ci ([#2](https://github.com/my-poc-sandbox/eslint-config-poc/issues/2)) ([bc67797](https://github.com/my-poc-sandbox/eslint-config-poc/commit/bc67797a818e576ee0ef33047c3fe1aa73767a46))
+
 ## 1.8.0 (2021-04-19)
 
 
