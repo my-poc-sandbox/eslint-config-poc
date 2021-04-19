@@ -2,7 +2,6 @@
   "name": "@my-poc-sandbox/eslint-config",
   "version": "1.7.0",
   "license": "MIT",
-  "pkgRoot": "lib",
   "repository": {
     "type": "git",
     "url": "git://github.com/my-poc-sandbox/eslint-config-poc.git"
@@ -31,7 +30,6 @@
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
     "eslint": "^7.24.0",
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-import": "^2.22.1",

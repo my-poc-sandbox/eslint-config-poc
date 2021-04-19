@@ -1,21 +1,4 @@
 module.exports = {
-  root: true,
-  env: {
-    es2021: true,
-    jest: true,
-  },
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-  settings: {
-    react: {
-      version: 'detect',
-    },
-  },
   plugins: ['import', 'jest', 'react', 'react-hooks', '@typescript-eslint'],
   extends: [
     'eslint:recommended',
