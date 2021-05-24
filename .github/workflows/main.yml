@@ -36,8 +36,8 @@ jobs:
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.TOKEN }}" > ~/.npmrc
       - name: Git Setup
         run: |
-          git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@github.com"
+          git config --global user.name "github-actions[bot]"
       - name: Bump and Publish
         run: |
           yarn package:release
