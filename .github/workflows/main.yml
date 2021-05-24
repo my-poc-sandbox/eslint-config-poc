@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Check out source code
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.TOKEN }}
       - name: Set up node
         uses: actions/setup-node@v1
       - name: Use cache 
