@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 3.1.0 (2021-05-24)
+
+
+### Features
+
+* token ([#11](https://github.com/my-poc-sandbox/eslint-config-poc/issues/11)) ([bdf37c6](https://github.com/my-poc-sandbox/eslint-config-poc/commit/bdf37c6dd2d6a733142968b38254fc54a4a37199))
+
 ## 3.0.0 (2021-04-19)
 
 
