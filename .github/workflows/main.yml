@@ -31,11 +31,11 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Create NPMRC
-        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.TOKEN }}" > ~/.npmrc
       - name: Git Setup
         run: |
-          git config --global user.name "rodrigo-sf"
-          git config --global user.email "rodrigo@superformula.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@github.com"
       - name: Bump and Publish
         run: |
           yarn package:release
