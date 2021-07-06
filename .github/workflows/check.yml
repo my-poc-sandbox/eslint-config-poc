@@ -1,0 +1,14 @@
+name: Build Check
+on:
+  # When Release Pull Request is opened and updated
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Lint
+        run: echo "test" | npx commitlint
