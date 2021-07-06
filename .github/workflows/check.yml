@@ -1,4 +1,3 @@
-name: Build Check
 on:
   # When Release Pull Request is opened and updated
   pull_request:
